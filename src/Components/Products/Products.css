@@ -1,0 +1,25 @@
+.products-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-shrink: 0;
+    flex-flow: row wrap;
+    justify-content: center;
+    background: linear-gradient(to bottom right, #e3f0ff, #fafcff);
+}
+
+.line {
+    border-top: 2px solid rgb(187, 187, 187);
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.main-body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #e3f0ff, #fafcff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

@@ -1,0 +1,39 @@
+.header-img {
+    height: 25rem;
+    margin: 1em;
+}
+
+.view-more {
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    font-size: 2rem;
+    padding: 1rem;
+    border: 2px solid black;
+}
+
+.view-more:hover {
+    color: white;
+    background-color: black;
+}
+
+.striked {
+    color: gray;
+    font-style: italic;
+}
+
+.featured-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2em;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-shrink: 0;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
