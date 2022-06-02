@@ -1,5 +1,5 @@
 .product-card {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 10%;
     margin: 1rem;
     padding: 1rem;
@@ -16,7 +16,7 @@
 }
 
 .product-card:hover {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 10%;
     margin: 1rem;
     transition-duration: .2s;

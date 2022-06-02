@@ -2,7 +2,6 @@ import {useState, useEffect} from 'react';
 import axios from 'axios';
 import React from 'react'
 import { CategoryItems } from './CategoryList'
-import {Link} from 'react-router-dom';
 import './CategoryCard.css'
 
 function Categories({setCatname}) {
@@ -18,7 +17,7 @@ function Categories({setCatname}) {
 
     return (
         <div>
-            <h2>Categories</h2>
+            <h2>Products</h2>
             <hr className="line"></hr>
             <div className='category-container'>
         {CategoryItems.map((item, index) => {
@@ -27,7 +26,7 @@ function Categories({setCatname}) {
                 setCatname(item.title)
             }} key={index}>
               <span className={item.cName} >
-              {item.title}
+                  <h1 className="category-name">{item.title}</h1>
               </span>
               </li>
           )

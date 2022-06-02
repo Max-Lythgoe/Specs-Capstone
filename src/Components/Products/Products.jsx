@@ -30,13 +30,15 @@ function Products({update, setUpdate}) {
 
     return (
         <div>
-            <h2>Featured Products</h2>
+            <h2>Deals on Computers</h2>
+            <p>10% off now thru July 30th!</p>
             <hr className="line"></hr>
             <div className='products-container'>
             {data.map((element,index) => {
                 return <ProductCard data={element} key={index} addToCart={addToCart} />
             })}
             </div>
+            <button>View More</button>
         </div>
     )
 

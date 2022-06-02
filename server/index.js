@@ -14,7 +14,9 @@ app.use(cors());
 //Put endpoints here
 app.get('/api/allProducts', async (req, res) => {
     let products = await sequelize.query(`
-    SELECT * FROM products 
+    SELECT * FROM products
+    WHERE category = 'computers'
+    LIMIT 5 
     `)
     res.status(200).send(products[0])
 });

@@ -1,0 +1,176 @@
+INSERT INTO products (name, price, description, category, img_link)
+VALUES (
+'HP - Pavilion 27" All-In-One',
+1409.99,
+'
+Lights, camera, and all the action: Speakers with Audio by B&O deliver incredible sound quality, and every scene comes to life with incredible resolution. Thoughtfully crafted: Made for the modern eye. With a micro-edge display, and a sleek and slim design, this PC is wrapped in sophistication. Conveniently placed ports on the side and back of the device allow for easy access and reduced cord-clutter. Because peace of mind matters: Stream and browse carefree with a pop-up privacy camera, the performance of a reliable processor, and abundant storage. Weve got your back: For 80 years, weve had your back. Thats why our PCs go through over 230 individual tests to ensure youre getting a powerful, reliable PC thats going to last.',
+'computers',
+'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6477/6477678_sd.jpg;maxHeight=200;maxWidth=300'),
+(
+'Lenovo - Refurbished ThinkCentre Desktop',
+189.99,
+'Refurbished Lenovo ThinkCentre Desktop: Work productively with this refurbished Lenovo ThinkCenter desktop business computer. A dual-core Intel Core i5 processor and 8GB of RAM help provide strong performance, and the 128GB SSD offers rapid file access. The small size and convenient mounting points on this Lenovo ThinkCenter desktop business computer make it easy to fit into space-limited areas.',
+'computers',
+'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6390/6390317_sa.jpg;maxHeight=200;maxWidth=300'
+),
+(
+'Samsung - Galaxy S22 Ultra 256gb',
+1299.99,
+'
+The power of our fastest chip ever, long lasting battery, and sophisticated AI enables revolutionary night-time video thats as clear-as-day. And, for the first time, S Pen with its increased super-powers has been embedded in Galaxy S22 Ultras beautifully sleek design. Today, Galaxy S22 Ultra sets an epic standard of smartphone experience.',
+'phones',
+'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6494/6494441_sd.jpg;maxHeight=200;maxWidth=300'
+),
+(
+'Google - Pixel 6 128gb (Unlocked)',
+599.00,
+'Meet Pixel 6. Its completely reimagined, inside and out. Powered by Tensor, Googles first-ever processor, its fast, smart, and secure. The all-day battery adapts to you. The Pixel Camera captures a moment just how you experienced it. And the Personal Safety app and the new Titan M2TM chip help protect you, your stuff, and your privacy.',
+'phones',
+'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6483/6483635_sd.jpg;maxHeight=200;maxWidth=300'
+),
+(
+'Motorola - Moto G Power 2021',
+169.99,
+'With a massive 5000mAh battery, this phone can easily last you up to 3 days. That combined with a powerful 48MP triple camera system and a big 6.6" screen truly makes this phone a trusted essential.',
+'phones',
+'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6441/6441178_rd.jpg;maxHeight=200;maxWidth=300'
+),
+(
+'Samsung - Galaxy S10+ 128gb',
+449.99,
+'The 10th generation of Samsung Galaxy lets you do more and do it better. The new Samsung Galaxy S10+ offers premium experience with the nearly bezel-less 6.4-inch QHD+ Cinematic Infinity Display. A ridiculously power camera, 5 total! With 3 Rear-Facing Cameras and an amazing In-Display Dual Front Portrait Camera, capture the best ultra-wide shot or perfect selfie. Unlocked your device from any angle with the in-display Ultrasonic Fingerprint ID2 that unlocke in anylight and ifts seamlessly with your natural grip. Best of all, the Wireless PowerShare feature lets your wirelessly charge your Galaxy Buds, Galaxy Watch, or even a friend's Qi Wireless Charging Capable phone right from our device.',
+'phones',
+'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6473/6473161_sd.jpg;maxHeight=200;maxWidth=300'
+),
+(
+'Apple - iPhone X 256gb',
+349.99,
+'Stay connected with this preowned Apple iPhone X smartphone. The 5.8-inch Super Retina HD display and the ultrawide and telephoto cameras let you capture high-quality low-light photos, while Face ID enhances security. This slim gray Apple iPhone X smartphone has 256GB of space that handles lots of photos and videos.',
+'phones',
+'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6394/6394667_sd.jpg;maxHeight=200;maxWidth=300'
+),
+(
+'Apple - iPhone 13 5G 128gb',
+799.99,
+'
+iPhone 13. The most advanced dual-camera system ever on iPhone. Lightning-fast A15 Bionic chip. A big leap in battery life. Durable design. Superfast 5G. And a brighter Super Retina XDR display.',
+'phones',
+'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6443/6443399_sd.jpg;maxHeight=200;maxWidth=300'
+),
+(
+'Samsung - Galaxy A32 5G 64gb',
+279.99,
+'Galaxy A32 5G pairs our best core features with one of the most affordable 5G devices on the market. That means you get a long lasting battery, expandable storage, multiple cameras, a super crisp display and blazing fast 5G speed.
+',
+'phones',
+'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6452/6452960_sd.jpg;maxHeight=200;maxWidth=300'
+),
+(
+'Meta - Quest 2 Virutal Reality Headset 128gb',
+299.00,
+'Step inside new realities with Meta Quest 2, our most advanced VR system yet. Explore new dimensions of gaming, social and entertainment, or revolutionize your fitness regime. With no wires, no limits and no PC or console required, youll be ready to go within minutes by setting up using the Meta Quest smartphone app, your Meta/Facebook account and a wireless internet connection. An incredible multi-sensory experience immerses you in cinematic, 3D positional audio through built-in speakers, while mind-blowing high resolution graphics mean you see every detail of every virtual world, even when youre moving at speed. An integrated 10,000mAh battery giving up to three hours gameplay or ten hours of entertainment combined with a comfort-driven design lets you explore deeper and further for longer, every time you step into VR.',
+'gaming',
+'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6473/6473553_rd.jpg;maxHeight=200;maxWidth=300'
+),
+(
+'Nintendo - Switch 32gb Console',
+299.99,
+'Introducing Nintendo Switch, the new home video game system from Nintendo. In addition to providing single and multiplayer thrills at home, the Nintendo Switch system can be taken on the go so players can enjoy a full home console experience anytime, anywhere. The mobility of a handheld is now added to the power of a home gaming system, with unprecedented new play styles brought to life by the two new Joy-Con controllers.PLAY ANYWHEREAt home the system rests in the Nintendo Switch dock, which lets you play with family and friends on a TV in the comfort of your living room. By simply lifting Nintendo Switch from the dock at any time, the system instantly transitions to handheld mode, and the same great gaming experience that was being enjoyed at home now travels with you.',
+'gaming',
+'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6364/6364255_sa.jpg;maxHeight=200;maxWidth=300'
+),
+(
+'Sony - PlayStation 5 Console',
+499.99,
+'The PS5 console unleashes new gaming possibilities that you never anticipated. Experience lightning fast loading with an ultra-high speed SSD, deeper immersion with support for haptic feedback, adaptive triggers, and 3D Audio, and an all-new generation of incredible PlayStation games. 3D audio via built-in TV speakers or analog/USB stereo headphones. Set up and latest system software update required.',
+'gaming',
+'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6426/6426149_sd.jpg;maxHeight=200;maxWidth=300'
+),
+(
+'Microsoft - Xbox Series S 512gb',
+299.99,
+'Go all-digital with Xbox Series S and enjoy next-gen performance in the smallest Xbox ever, at a great price. Make the most of every gaming minute with Quick Resume, lightning-fast load times, and gameplay of up to 120 FPS—all powered by Xbox Velocity Architecture. Enjoy digital games from four generations of Xbox, with hundreds of optimized titles that look and play better than ever. And when you add Xbox Game Pass Ultimate (membership sold separately or included when you choose Xbox All Access), you get online multiplayer to play with friends and an instant library of 100+ high-quality games, including day one releases from Xbox Game Studios like Halo Infinite, Forza Horizon 5, and Minecraft Dungeons.',
+'gaming',
+'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6430/6430277_sd.jpg;maxHeight=200;maxWidth=300'
+),
+(
+'Samsung - 50" Class 7 Series LED 4k TV',
+349.99,
+'Build an immersive media room with this 50-inch Samsung Smart TV. The Crystal 4K processor automatically improves the image quality of everything you watch, and the HDR technology makes colors look vivid and lifelike. This Samsung Smart TV has a universal guide that organizes live and streamed content so you can find what you're looking for quickly.',
+'tvs',
+'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401738_sd.jpg;maxHeight=200;maxWidth=300'
+),
+(
+'LG - 70" Class NanoCell 75 Series 4k TV',
+699.99,
+'Elevate movies and sports with NanoCell. Color your world with a lifelike picture, enriched with a billion rich colors. It's an experience furthered by connected home features and LGs advanced processor.',
+'tvs',
+'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6476/6476896_sd.jpg;maxHeight=200;maxWidth=300'
+),
+(
+'Insignia - 65" Class F30 Series LED 4K TV',
+419.99,
+'Take in every moment with breathtaking 4K Ultra HD on this 65-inch screen. Its equipped with DTS Studio Sound to create realistic and immersive audio. Access live over-the-air channels and streaming—and control it all with your voice. Ask Alexa to launch apps, search for titles and more. Experience the affordable, yet high-performing Insignia NS-65DF710NA21 65" Class F30 Series LED 4K UHD Smart Fire TV.',
+'tvs',
+'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6405/6405232_sd.jpg;maxHeight=200;maxWidth=300'
+),
+(
+'Sony - 65" Class BRAVIA XR Series 4K',
+899.99,
+'Enjoy premium OLED picture with contrast and color that feels deep, natural, and real. The revolutionary Cognitive Processor XR™ optimizes thousands of on-screen elements simultaneously for a lifelike picture. Feel the action with Acoustic Surface Audio+ and experience a truly immersive sound that perfectly matches the picture on screen.',
+'tvs',
+'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6455/6455218_sd.jpg;maxHeight=200;maxWidth=300'
+),
+(
+'Bose - QuietComfort 45 Wireless Noise Cancelling Headphones',
+279.00,
+'
+The minute you put on Bose QuietComfort 45 Wireless Noise Cancelling Headphones, you feel it — the iconic quiet that allows you to concentrate on your music or work on your passion projects. Plus, with these wireless headphones, you can experience the comfort and crystal-clear sound that can only come from Bose. The soft, plush cushions of these Bose wireless headphones seal you in. Then you flip the switch and whoosh — the world fades. The music starts. It’s love at first listen.',
+'accessories',
+'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6471/6471288_sd.jpg;maxHeight=200;maxWidth=300'
+),
+(
+'Insignia - 5W Qi Certified Wireless Charging Pad',
+7.99,
+'Cell phone batteries never last long enough, and it makes phone charging throughout the day a chore. Trying to find and connect the right cable in the right direction can be frustrating. The Insignia NS-MWPC5K Qi Certified Wireless Charging Pad for Android/iPhone makes charging fast and easy. Just place your smartphone, tablet, or other Qi-compatible device on the pad when you need extra power. Its wireless, low-profile design eliminates cumbersome cords and offers versatile placement options. The LED indicator shows the charge status of your device, and a 4 ft. charge cable and USB adapter power your charging pad. With its 5 W output, you can count on this charging pad to keep your devices charged and ready to go.',
+'accessories',
+'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6409/6409654_sd.jpg;maxHeight=200;maxWidth=300'
+),
+(
+'Dynex - 3ft USB Type C-to-USB Type C Cable',
+5.99,
+'Charge and provide a simple connection between devices with this DYNEX USB C-C cable. The 3-foot length lets you access your portable devices while plugged in, and the sturdy design withstands everyday stress for ensured durability. This black DYNEX USB C-C cable enables fast data transfer when connected to compatible devices.
+',
+'accessories',
+'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6403/6403431_sd.jpg;maxHeight=200;maxWidth=300'
+),
+(
+'Dynex - 5000 mAh Portable Charger for USB Devices',
+4.99,
+'Power up your portable devices with this Dynex™ battery pack. The 5000 mAh capacity offers ample power for smartphones and tablets, while the compact size creates a portable traveling companion. This Dynex™ battery pack includes a micro USB cable for immediate use with most Android devices and easy recharging, and the 2.4-amp output ensures rapid charging speeds.',
+'accessories',
+'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6403/6403433_sd.jpg;maxHeight=200;maxWidth=300'
+),
+(
+'Apple - USB Type C Digital AV Multiport Adapter',
+69.99,
+'The USB Type-C digital AV multiport adapter lets you connect your USB Type-C enabled Mac or iPad Pro to an HDMI display, while also connecting a standard USB device and a USB Type-C charging cable.',
+'accessories',
+'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5596/5596800_sd.jpg;maxHeight=200;maxWidth=300'
+),
+(
+'Apple - 20W USB-C Power Adapter',
+18.00,
+'The Apple 20W USB-C Power Adapter offers fast, efficient charging at home, in the office, or on the go. While the power adapter is compatible with any USB-C-enabled device, Apple recommends pairing it with the 11-inch iPad Pro and 12.9-inch iPad Pro (3rd generation) for optimal charging performance. You can also pair it with iPhone 8 or later to take advantage of the fast-charging feature.',
+'accessories',
+'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6437/6437121_sd.jpg;maxHeight=200;maxWidth=300'
+),
+(
+'Lenovo - IdeaPad Gaming Cloth Mouse Pad',
+6.99,
+'Lenovo IdeaPad Gaming Cloth Mouse Pads are a set of gaming mouse pads that offer an unimpeded gaming experience with a smooth, water-resistant surface and anti-slip rubber base. Thin and light, they are reliable gaming companions and help set off gamers battle stations while on-the-go.',
+'accessories',
+'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6476/6476528_sd.jpg;maxHeight=200;maxWidth=300'
+)
+
+
