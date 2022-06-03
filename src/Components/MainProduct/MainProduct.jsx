@@ -1,29 +1,30 @@
-import React from "react";
-import phonePic from "./iphones-featured.png";
+import {useState, useEffect} from "react";
 import "./MainProduct.css";
 
 const MainProduct = () => {
-  return (
-    <div>
-      <div className="main-container">
-        <div className="main-pic">
-          <img
-            className="header-img"
-            src={phonePic}
-            alt="featured product"
-          ></img>
-        </div>
-        <div className="featured-container">
-          <h1>iPhone 13 Pro</h1>
-          <h1 className="striked">
-            <s>$999.99</s>
-          </h1>
-          <h1>$899.99</h1>
-          <button className="view-more">Learn More</button>
-        </div>
-      </div>
-    </div>
-  );
-};
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => setOffsetY(window.pageYOffset)
 
+  useEffect(() => {
+      window.addEventListener('scroll', handleScroll); 
+
+      return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+return (
+    <div>
+    <section>
+  <div className='background-body-phones' style={{transform: `translateY(${offsetY * 0.0}px)`}}>
+      <img className='phone1' style={{transform: `translateY(${offsetY * 0.5}px)`}} src="https://www.cspire.com/resources/images/product/devices/iphone13/iph13PM-sierrablue-3-lg.png" alt="airpod case"></img>
+
+      <img className='phone2' style={{transform: `translateY(${offsetY * 0.6}px)`}} src="https://www.cspire.com/resources/images/product/devices/iphone13/iph13P-graphite-3-lg.png" alt="left airpod"></img>
+
+      <img className='phone3' style={{transform: `translateY(${offsetY * 0.6}px)`}} src="https://www.cspire.com/resources/images/product/devices/iphone13/iph13PM-silver-3-lg.png" alt="right aripod"></img>
+      <h2 className='maintext'>iPhone 13 Pro</h2>
+      <button className='buy-button'>Buy Now</button>
+  </div>
+  </section>
+  </div>
+)
+}
 export default MainProduct;

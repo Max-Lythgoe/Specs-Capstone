@@ -8,15 +8,10 @@
 }
 
 .navbar-logo {
-    color: #fff;
-    justify-self: start;
-    margin-left: 20px;
-    cursor: pointer;
-}
-
-.fa-react {
-    margin-left: 0.5rem;
-    font-size: 1.6rem;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    color: white;
 }
 
 .nav-menu {

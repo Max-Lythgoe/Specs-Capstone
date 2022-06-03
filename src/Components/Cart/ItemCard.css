@@ -15,7 +15,7 @@
 
 .cart-card {
   margin: 2em;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   border-radius: 15px;
   padding: 1em;
   display: flex;
