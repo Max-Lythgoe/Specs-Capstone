@@ -16,7 +16,7 @@ app.get('/api/allProducts', async (req, res) => {
     let products = await sequelize.query(`
     SELECT * FROM products
     WHERE category = 'computers'
-    LIMIT 5 
+    LIMIT 8 
     `)
     res.status(200).send(products[0])
 });
@@ -53,6 +53,19 @@ app.get(`/api/cartTotal/:id`, async (req, res) => {
     WHERE c.user_id = ${id}
     `)
     res.status(200).send(cartTotal[0])
+})
+
+//Cart item count
+app.get(`/api/cartCount/:id`, async (req, res) => {
+    const {id} = req.params
+    const cartCount = await sequelize.query(`
+    SELECT COUNT(p.price)
+    FROM cart c
+    JOIN products p
+    ON c.product_id = p.id
+    WHERE c.user_id = ${id}
+    `)
+    res.status(200).send(cartCount[0])
 })
 
 app.post(`/api/addToCart`, async (req, res) => {

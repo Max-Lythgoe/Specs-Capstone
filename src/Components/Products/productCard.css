@@ -1,5 +1,4 @@
 .product-card {
-    /* border: 2px solid black; */
     border-radius: 10%;
     margin: 1rem;
     padding: 1rem;
@@ -17,7 +16,6 @@
 }
 
 .product-card:hover {
-    /* border: 2px solid black; */
     border-radius: 10%;
     margin: 1rem;
     transition-duration: .2s;
@@ -57,4 +55,23 @@ button {
     cursor: pointer;
     overflow: hidden;
     outline: none;
+}
+
+@media screen and (max-width: 960px) {
+    .product-card {
+        border-radius: 10%;
+        margin: 1rem;
+        padding: 1rem;
+        width: 15rem;
+        height: 15rem;
+        transition-duration: .2s;
+        transform: scale(1);
+        color: black;
+        background: white;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+    }
 }

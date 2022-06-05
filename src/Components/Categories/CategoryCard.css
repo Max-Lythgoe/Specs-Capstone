@@ -11,6 +11,10 @@
     cursor: pointer;
 }
 
+.category-card:hover {
+    box-shadow: 0px 25px 40px #1687d933;
+}
+
 li {
     list-style-type: none;
 }
@@ -28,4 +32,27 @@ li {
     color: white;
     justify-content: center;
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 960px) {
+    .category-card {
+        border-radius: 15px;
+        margin: 1rem;
+        padding: 2rem;
+        width: 5rem;
+        color: black;
+        background: linear-gradient(180deg, rgb(75, 204, 255) 0%, rgba(0,208,41,1) 100%);
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .category-name {
+        color: white;
+        justify-content: center;
+        text-transform: uppercase;
+        font-size:large;
+    }
+    
 }

@@ -1,0 +1,52 @@
+.footer-body {
+    background: rgb(14, 234, 146);
+    color: #ffffff;
+    height: 100%;
+    margin: 0;
+}
+
+.counter-icon {
+    position: absolute;
+    right: 5%;
+    top: 1%;
+    background: linear-gradient(180deg, rgb(247, 98, 98) 0%, rgba(208,0,0,1) 100%);
+    border-radius: 0;
+    padding: 10px;
+    font-size: large;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width: 960px) {
+    .counter-icon {
+        position: absolute;
+        right: 15%;
+        top: 1%;
+        background-color: red;
+
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .counter-icon {
+        position: absolute;
+        right: 1%;
+        top: 1%;
+        background-color: red;
+
+    }
+}
+
+@media screen and (max-width: 1191px) {
+    .counter-icon {
+        position: absolute;
+        right: 15%;
+        top: 1%;
+        background-color: red;
+
+    }
+}

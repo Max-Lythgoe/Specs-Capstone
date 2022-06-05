@@ -4,12 +4,13 @@
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 25px;
-  position: absolute; 
+  position: fixed; 
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   max-height: 90%;
   z-index: 99;
+  overflow-y: auto;
 }
 
 .modalContainer .title {
@@ -63,6 +64,48 @@
   cursor: pointer;
 }
 
+.modalContainer .footer button:hover {
+  background-color: rgb(163, 195, 255);
+}
+
 #cancelBtn {
   background-color: crimson;
+}
+
+#cancelBtn:hover {
+  background-color: rgb(254, 67, 104);
+}
+
+.subtitle {
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 960px) {
+  .modalContainer {
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 25px;
+    position: fixed; 
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 40%;
+    max-width: 70%;
+    z-index: 99;
+    overflow-y: auto;
+    font-size: small;
+  }
+  
+  .modalContainer .body {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    text-align: center;
+    z-index: 1
+  }
+
 }

@@ -6,6 +6,7 @@
     flex-flow: row wrap;
     justify-content: center;
     background: linear-gradient(to bottom right, #e3f0ff, #fafcff);
+    padding: 1rem;
 }
 
 .line {
@@ -22,4 +23,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 960px) {
+    .products-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-shrink: 0;
+        flex-flow: row wrap;
+        justify-content: center;
+        background: linear-gradient(to bottom right, #e3f0ff, #fafcff);
+        padding: 1rem;
+    }
   }

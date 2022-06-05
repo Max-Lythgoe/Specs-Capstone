@@ -3,7 +3,7 @@ import './Modal.css'
 
 function Modal({ data, openModal, setOpenModal, addToCart }) {
     return (
-      <div className="modalBackground">
+      <div className="modal-background">
         {openModal ?  
         <div className="modalContainer">
           <div className="titleCloseBtn">
@@ -21,6 +21,12 @@ function Modal({ data, openModal, setOpenModal, addToCart }) {
           <div className="modal-pic">
             <img src={data.img_link} alt={data.name}></img>
             </div>
+            <div className="title">
+              <h1>${data.price}</h1>
+              </div>
+              <div className="subtitle">
+              <h1>{data.category}</h1>
+              </div>
           <div className="body">
             <p>{data.description}</p>
           </div>

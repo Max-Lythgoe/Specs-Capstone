@@ -38,7 +38,6 @@ function Products({update, setUpdate}) {
                 return <ProductCard data={element} key={index} addToCart={addToCart} />
             })}
             </div>
-            <button>View More</button>
         </div>
     )
 

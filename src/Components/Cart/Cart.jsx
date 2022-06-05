@@ -42,6 +42,7 @@ const Cart = ({update, setUpdate}) => {
   return (
     <div>
         <h2>My Cart</h2>
+        <p>Items in Cart: {data.length}</p>
         <hr className="line"></hr>
         <div className="main-body">
         <div className="cart-container">

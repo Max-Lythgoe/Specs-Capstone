@@ -17,7 +17,7 @@ function Categories({setCatname}) {
 
     return (
         <div>
-            <h2>Products</h2>
+            <h2>Categories</h2>
             <hr className="line"></hr>
             <div className='category-container'>
         {CategoryItems.map((item, index) => {

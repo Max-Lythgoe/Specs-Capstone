@@ -12,8 +12,8 @@ function Home() {
       <div className="App">
         <NavBar />
         <Parallax />
-        <MainProduct />
         <Products update={update} setUpdate={setUpdate}/>
+        <MainProduct />
         <Footer />
       </div>
     );

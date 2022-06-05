@@ -37,14 +37,14 @@ section {
     max-height: 50rem;
     object-fit: cover;
     pointer-events: none;
-    z-index: 2000;
+    z-index: 900;
 }
 
 .maintext {
     position: relative;
     color: white;
     font-size: 10em;
-    z-index: 1;
+    z-index: 1000;
 }
 
 .background-body {
@@ -54,6 +54,7 @@ section {
 }
 
 .buy-button {
+    position: relative;
     background-color: transparent;
     border: solid 3px white;
     padding: 1rem;
@@ -82,7 +83,7 @@ background-color: #fff;
     
     .airpod-case {
         position: absolute;
-        top: 600px;
+        top: 900px;
         left: 40px;
         max-width: 25rem;
         max-height: 25rem;
@@ -92,7 +93,7 @@ background-color: #fff;
     
     .airpod-right {
         position: absolute;
-        top: 0;
+        top: 300px;
         left: 125px;
         max-width: 25rem;
         max-height: 25rem;
@@ -103,7 +104,7 @@ background-color: #fff;
     
     .airpod-left {
         position: absolute;
-        top: 170px;
+        top: 470px;
         left: -80px;
         max-width: 25rem;
         max-height: 25rem;
