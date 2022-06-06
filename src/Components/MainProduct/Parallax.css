@@ -93,7 +93,7 @@ background-color: #fff;
     
     .airpod-right {
         position: absolute;
-        top: 300px;
+        top: 400px;
         left: 125px;
         max-width: 25rem;
         max-height: 25rem;
@@ -104,7 +104,7 @@ background-color: #fff;
     
     .airpod-left {
         position: absolute;
-        top: 470px;
+        top: 570px;
         left: -80px;
         max-width: 25rem;
         max-height: 25rem;
@@ -136,7 +136,7 @@ background-color: #fff;
     }
     
     .buy-button:hover {
-    background-color: #fff;
+      background-color: #fff;
       color: #000;
       cursor: pointer;
       mix-blend-mode: screen;

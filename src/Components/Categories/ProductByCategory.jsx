@@ -17,9 +17,6 @@ function ProductByCategory({update, setUpdate}) {
         }
 
         axios.post('http://localhost:4000/api/addToCart', object)
-        .then((res) => {
-            setUpdate(++update)
-        })
     }
 
     useEffect(() => {

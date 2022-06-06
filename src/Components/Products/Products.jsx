@@ -1,11 +1,11 @@
 import {useState, useEffect} from 'react';
 import axios from 'axios';
-import ProductCard from './ProductCard'
+import ProductCard from './ProductCard';
 
 import './Products.css'
 
 function Products({update, setUpdate}) {
-    const [data, setData] = useState([])
+    const [data, setData] = useState([]);
 
     const addToCart = (id) => {
         let object = {
@@ -15,7 +15,6 @@ function Products({update, setUpdate}) {
 
         axios.post('http://localhost:4000/api/addToCart', object)
         .then((res) => {
-            console.log(res.data)
             setUpdate(++update)
         })
     }
@@ -23,7 +22,6 @@ function Products({update, setUpdate}) {
     useEffect(() => {
         axios.get(`http://localhost:4000/api/allProducts`)
         .then((res) => {
-            console.log(res.data)
             setData(res.data)
         })
     }, [])

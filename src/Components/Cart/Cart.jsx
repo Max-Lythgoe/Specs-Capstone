@@ -21,7 +21,6 @@ const Cart = ({update, setUpdate}) => {
         axios.delete(`http://localhost:4000/api/userCart/${id}`)
         .then((res) => {
             setUpdate(update + 1)
-            console.log('item removed')
             getData()
         })
     }
@@ -30,10 +29,29 @@ const Cart = ({update, setUpdate}) => {
         axios.get(`http://localhost:4000/api/cartTotal/${currentUser}`)
         .then((res) => {
             setTotal(res.data[0].sum)
-            console.log(res.data[0].sum)
         })
     }
 
+    const checkoutButton = () => {
+        console.log(data)
+        fetch('/create-checkout-session', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                items: data
+            })
+        }).then(res => {
+            if (res.ok) return res.json()
+            return res.json().then(json => Promise.reject(json))
+        }).then(({url}) => {
+            console.log(url)
+            window.location = url
+        }).catch(e => {
+            console.error(e.error)
+        })
+ }
     useEffect(() => {
         getData()
         totalCart()
@@ -51,8 +69,9 @@ const Cart = ({update, setUpdate}) => {
         })}
         <h2 className="subtitle">Subtotal: ${Number(total).toFixed(2)} </h2>
         <h2 className="subtitle">Shipping: FREE </h2>
-        <h2 className="subtitle">Taxes: ${Number(total * .047).toFixed(2)} </h2>
-        <h2>Total: ${Number((total * .047) + (total)).toFixed(2)} </h2>
+        {/* <h2 className="subtitle">Taxes: ${Number(total * .047).toFixed(2)} </h2> */}
+        <h2>Total: ${Number(total).toFixed(2)} </h2>
+        <button onClick={() => checkoutButton()} className="checkout-btn"><b>Go to Checkout</b></button>
         </div>
         </div>
 

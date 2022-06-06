@@ -97,7 +97,7 @@ section {
     
     .phone2 {
         position: absolute;
-        top: 0;
+        top: -500px;
         left: 145px;
         max-width: 25rem;
         max-height: 25rem;

@@ -2,8 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  justify-content: center;
-  width: 95%;
+  width: 75%;
   height: auto;
   background-color: #ffffff;
   border-radius: 20px;
@@ -15,12 +14,11 @@
 
 .cart-card {
   margin: 2em;
-  /* border: 2px solid black; */
   border-radius: 15px;
   padding: 1em;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content:space-between;
   gap: 5em;
   box-shadow: 0px 25px 40px #1687d933;
 }
@@ -74,6 +72,32 @@
   color: gray;
   font-weight: 400;
 }
+
+.checkout-btn {
+  margin: 2em;
+  border-radius: 15px;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: large;
+  background-color: rgb(14, 234, 146);
+  color: white;
+  gap: 5em;
+  transition: background-color .5s;
+  background-size: 0% 100%;
+}
+
+.checkout-btn:hover {
+  background-color:#6bc3ef;
+  background-image:linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 40%, rgba(255,255,255,.7) 100%);
+  background-repeat:no-repeat;
+  background-size: 200% 100%; 
+  transition:background-size 1s, background-color 1s;
+}
+
+.btn:active {background-color: rgb(75, 204, 255); transition:background-size 0}
+
 
 @media screen and (max-width: 960px) {
   .cart-container {

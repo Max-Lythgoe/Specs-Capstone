@@ -12,7 +12,7 @@ function Modal({ data, openModal, setOpenModal, addToCart }) {
                 setOpenModal(false)
               }}
             >
-              <i class="fa-solid fa-xmark"></i>
+              <i className="fa-solid fa-xmark"></i>
             </button>
           </div>
           <div className="title">

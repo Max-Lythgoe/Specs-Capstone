@@ -1,15 +1,14 @@
 const express = require('express');
 const cors = require('cors');
-const path = require('path');
 const app = express();
 require('dotenv').config();
 const PORT = process.env.PORT || 4000;
 const sequelize = require('./sequelize')
+const stripe = require('stripe')(process.env.STRIPE_PRIVATE_KEY)
 
 //Middleware
 app.use(express.json());
 app.use(cors());
-// app.use(express.static(path.resolve(__dirname, "../build")));
 
 //Put endpoints here
 app.get('/api/allProducts', async (req, res) => {
@@ -88,8 +87,33 @@ app.delete(`/api/userCart/:id`, async (req, res) => {
     res.status(200).send("Removed from Cart")
 })
 
-// app.get('/*', function (req, res) {
-//     res.sendFile(path.join(__dirname, '../build', 'index.html'));
-// });
+//stripe checkout
+app.post('/create-checkout-session', async (req, res) => {
+
+    try {
+        const session = await stripe.checkout.sessions.create({
+            payment_method_types: ['card'],
+            mode: 'payment',
+            line_items: req.body.items.map(item => {
+                return {
+                    price_data: {
+                        currency: 'usd',
+                        product_data: {
+                            name: item.name
+                        },
+                        unit_amount: item.price * 100,
+                    },
+                    quantity: 1
+                }
+            }),
+            success_url: `${process.env.SERVER_URL}/`,
+            cancel_url: `${process.env.SERVER_URL}/cart`
+        })
+        res.json({url: session.url })
+    } catch (e) {
+        res.status(500).json({ error: e.message })
+    }
+})
+
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

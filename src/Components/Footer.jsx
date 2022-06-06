@@ -1,10 +1,11 @@
 import {useEffect, useState} from "react";
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './footer.css'
 
 const Footer = () => {
 
-  const [update, setUpdate] = useState(0)
+  var [update, setUpdate] = useState(0)
   const [data, setData] = useState([])
 
   let currentUser = 1
@@ -15,25 +16,21 @@ const Footer = () => {
           setData(res.data)
           setUpdate(++update)
       })
+      .catch(console.error)
   }
 
   useEffect(() => {
     getData()
-  }, [update])
-
-  // useEffect(() => {
-  //   setInterval(() => {
-  //     getData()
-  //   }, 1000);
-  // },[])
-
+  }, [])
   
   return (
     <div className='footer-body'>
       <h1>footer</h1>
+      <Link to="/cart">
       <div>
       <h1 className="counter-icon">{data.length}</h1>
       </div>
+      </Link>
       </div>
   )
 }

@@ -1,17 +1,10 @@
-import { useEffect } from 'react';
-import Aos from 'aos';
+import React from 'react';
 import './ItemCard.css'
-import 'aos/dist/aos.css'
 
 const ItemCard = ({data, removeItem}) => {
 
-    //scroll animations
-    useEffect(() => {
-      Aos.init({duration: 1000});
-  }, []);
-
   return (
-    <div data-aos="fade-up" className='cart-card'>
+    <div className='cart-card'>
         <img className="product-img" src={data.img_link} alt="productImg"></img>
         <div className="maintwo">
             <h3 className="product-name">{data.name}</h3>
