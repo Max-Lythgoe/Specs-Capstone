@@ -34,6 +34,17 @@ li {
     text-transform: uppercase;
 }
 
+.selector {
+    border-radius: 15px;
+    font-size: large;
+    padding: .5rem;
+}
+
+.sort {
+    padding-right: 2em;
+    font-size: large;
+}
+
 @media screen and (max-width: 960px) {
     .category-card {
         border-radius: 15px;
