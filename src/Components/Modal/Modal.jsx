@@ -1,7 +1,13 @@
 import React from 'react'
 import './Modal.css'
 
-function Modal({ data, openModal, setOpenModal, addToCart }) {
+function Modal({ data, openModal, setOpenModal, addToCart, setUpdate, update }) {
+
+  const addToCartHandler = () => {
+    setUpdate(update + 1)
+    addToCart(data.id)
+  }
+
     return (
       <div className="modal-background">
         {openModal ?  
@@ -30,6 +36,9 @@ function Modal({ data, openModal, setOpenModal, addToCart }) {
           <div className="body">
             <p>{data.description}</p>
           </div>
+          <div className="subtitle">
+            <p>In Stock</p>
+            </div>
           <div className="footer">
             <button
               onClick={() => {
@@ -39,7 +48,7 @@ function Modal({ data, openModal, setOpenModal, addToCart }) {
             >
               Cancel
             </button>
-            <button onClick={() => addToCart(data.id)}>Add To Cart</button>
+            <button onClick={() => addToCartHandler()} >Add To Cart</button>
           </div>
         </div>
         : null}

@@ -10,7 +10,7 @@ const CartPage = () => {
     <div>
         <NavBar />
         <Cart update={update} setUpdate={setUpdate}/>
-        <Footer />
+        <Footer update={update} />
     </div>
   )
 }

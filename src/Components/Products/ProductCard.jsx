@@ -2,9 +2,9 @@ import { useState} from 'react';
 import Modal from '../Modal/Modal';
 import './productCard.css';
 
-function ProductCard({data, addToCart}) {
+function ProductCard({data, addToCart, setUpdate, update}) {
     const [openModal, setOpenModal] = useState(false);
-
+    // console.log(setUpdate)
     return (
         <div>
         <div className='product-card' onClick={() => {setOpenModal(true)}}>
@@ -13,7 +13,7 @@ function ProductCard({data, addToCart}) {
             <h4 className="item-data category">{data.category.toUpperCase()}</h4>
             <h2 className="item-data">${data.price}</h2>
             </div>
-            <Modal openModal={openModal} setOpenModal={setOpenModal} data={data} addToCart={addToCart}/>
+            <Modal setUpdate={setUpdate} openModal={openModal} setOpenModal={setOpenModal} data={data} update={update} addToCart={addToCart}/>
         </div>
     )
 }

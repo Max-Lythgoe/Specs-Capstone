@@ -3,12 +3,12 @@ import NavBar from '../NavBar/NavBar'
 import ProductByCategory from '../Categories/ProductByCategory'
 import Footer from '../Footer'
 
-const CategoriesPage = () => {
+const CategoriesPage = ({update, setUpdate}) => {
   return (
     <div>
         <NavBar />
-        <ProductByCategory />
-        <Footer />
+        <ProductByCategory update={update} setUpdate={setUpdate} />
+        <Footer update={update} />
     </div>
   )
 }

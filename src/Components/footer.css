@@ -1,8 +1,51 @@
 .footer-body {
-    background: rgb(14, 234, 146);
+    background: rgb(4, 175, 227);
     color: #ffffff;
-    height: 100%;
+    height: auto;
     margin: 0;
+    padding: 2em;
+}
+
+.container {
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    margin: auto
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    align-content: space-between;
+    gap: 5em;
+}
+
+h6 {
+    font-size: large;
+    text-align: justify;
+}
+
+.section-1 {
+    width: 90%;
+}
+
+.text-justify {
+    flex-wrap: wrap;
+    text-align: justify;
+}
+
+.section-2 {
+    width: 30%
+}
+
+.footer-links {
+    text-align: justify;
+    color: white;
+}
+
+a {
+    color: white;
 }
 
 .counter-icon {
@@ -30,6 +73,22 @@
         background-color: red;
 
     }
+
+    .container {
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+        font-size: small;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        display: flex;
+        align-content: space-between;
+        gap: 5em;
+    }
 }
 
 @media screen and (max-width: 1280px) {
@@ -40,12 +99,19 @@
         background-color: red;
 
     }
+
+    .container {
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        margin: auto
+    }
 }
 
 @media screen and (max-width: 1191px) {
     .counter-icon {
         position: absolute;
-        right: 15%;
+        right: 17%;
         top: 1%;
         background-color: red;
 

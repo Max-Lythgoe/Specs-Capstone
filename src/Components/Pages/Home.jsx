@@ -5,8 +5,7 @@ import NavBar from '../NavBar/NavBar'
 import Footer from '../Footer'
 import Parallax from '../MainProduct/Parallax';
 
-function Home() {
-    const [update, setUpdate] = useState(0)
+function Home({update, setUpdate}) {
   
     return (
       <div className="App">
@@ -14,7 +13,7 @@ function Home() {
         <Parallax />
         <Products update={update} setUpdate={setUpdate}/>
         <MainProduct />
-        <Footer />
+        <Footer update={update} />
       </div>
     );
 }

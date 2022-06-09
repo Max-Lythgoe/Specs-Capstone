@@ -50,6 +50,7 @@ section {
     color: white;
     font-size: 10em;
     z-index: 1;
+    margin-top: .5em;
 }
 
 .background-body-phones {
@@ -65,6 +66,7 @@ section {
     font-size: 5em;
     color: white;
     border-radius: 30px;
+    margin-top: .5em;
 }
 
 .buy-button-phones:hover {
@@ -93,6 +95,7 @@ section {
         max-height: 25rem;
         object-fit: cover;
         pointer-events: none;
+        filter: none;
     }
     
     .phone2 {
@@ -104,6 +107,7 @@ section {
         object-fit: cover;
         pointer-events: none;
         z-index: 2000;
+        filter: none;
     }
     
     .phone3 {
@@ -115,6 +119,7 @@ section {
         object-fit: cover;
         pointer-events: none;
         z-index: 2000;
+        filter: none;
     }
     
     .maintext-phones {

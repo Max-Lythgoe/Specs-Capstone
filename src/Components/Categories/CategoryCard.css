@@ -38,11 +38,16 @@ li {
     border-radius: 15px;
     font-size: large;
     padding: .5rem;
+    margin-bottom: 1rem;
 }
 
 .sort {
     padding-right: 2em;
     font-size: large;
+}
+
+option {
+    border-radius: 15px;
 }
 
 @media screen and (max-width: 960px) {

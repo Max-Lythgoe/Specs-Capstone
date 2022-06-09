@@ -1,7 +1,6 @@
 import {useState, useEffect} from 'react';
 import axios from 'axios';
 import ProductCard from './ProductCard';
-
 import './Products.css'
 
 function Products({update, setUpdate}) {
@@ -33,7 +32,7 @@ function Products({update, setUpdate}) {
             <hr className="line"></hr>
             <div className='products-container'>
             {data.map((element,index) => {
-                return <ProductCard data={element} key={index} addToCart={addToCart} />
+                return <ProductCard data={element} key={index} addToCart={addToCart} setUpdate={setUpdate} update={update}/>
             })}
             </div>
         </div>

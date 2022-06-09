@@ -45,6 +45,7 @@ section {
     color: white;
     font-size: 10em;
     z-index: 1000;
+    margin-top: .5em;
 }
 
 .background-body {
@@ -61,6 +62,7 @@ section {
     font-size: 5em;
     color: white;
     border-radius: 30px;
+    margin-top: .5em;
 }
 
 .buy-button:hover {
@@ -83,20 +85,20 @@ background-color: #fff;
     
     .airpod-case {
         position: absolute;
-        top: 900px;
-        left: 40px;
-        max-width: 25rem;
-        max-height: 25rem;
+        top: 500px;
+        left: 60px;
+        max-width: 15rem;
+        max-height: 15rem;
         object-fit: cover;
         pointer-events: none;
     }
     
     .airpod-right {
         position: absolute;
-        top: 400px;
+        top: 100px;
         left: 125px;
-        max-width: 25rem;
-        max-height: 25rem;
+        max-width: 15rem;
+        max-height: 15rem;
         object-fit: cover;
         pointer-events: none;
         z-index: 2000;
@@ -104,10 +106,10 @@ background-color: #fff;
     
     .airpod-left {
         position: absolute;
-        top: 570px;
-        left: -80px;
-        max-width: 25rem;
-        max-height: 25rem;
+        top: 270px;
+        left: -10px;
+        max-width: 15rem;
+        max-height: 15rem;
         object-fit: cover;
         pointer-events: none;
         z-index: 2000;
