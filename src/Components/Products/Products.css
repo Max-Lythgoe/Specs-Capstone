@@ -5,7 +5,7 @@
     flex-shrink: 0;
     flex-flow: row wrap;
     justify-content: center;
-    background: linear-gradient(to bottom right, #e3f0ff, #fafcff);
+    background: linear-gradient(to top, #e3f0ff, #eaf4ff);
     padding: 1rem;
 }
 

@@ -41,7 +41,7 @@
   align-items: center;
   font-size: 1.7rem;
   text-align: center;
-  z-index: 1
+  z-index: 1;
 }
 
 .modalContainer .footer {
@@ -66,6 +66,26 @@
 
 .modalContainer .footer button:hover {
   background-color: rgb(163, 195, 255);
+}
+
+.show {
+  background: linear-gradient(0deg, rgb(9, 202, 22) 0%, rgba(3,227,29,1) 100%);
+  border-radius: 15px;
+  color: white;
+  font-size: large;
+  transition-duration: .2s;
+  transform: scale(1);
+  padding: 1rem;
+  font-weight: bold;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.hide {
+  color:white;
+  transform: scale(0)
 }
 
 #cancelBtn {

@@ -46,6 +46,11 @@ li {
     font-size: large;
 }
 
+
+h2 {
+    font-size: xx-large;
+}
+
 option {
     border-radius: 15px;
 }

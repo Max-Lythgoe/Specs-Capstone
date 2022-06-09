@@ -67,8 +67,8 @@ const Cart = ({update, setUpdate}) => {
         {data.map((element, index) => {
             return <ItemCard data={element} key={index} removeItem={removeItem}/>
         })}
-        <h2 className="subtitle">Subtotal: ${Number(total).toFixed(2)} </h2>
-        <h2 className="subtitle">Shipping: FREE </h2>
+        <h3 className="subtitle">Subtotal: ${Number(total).toFixed(2)} </h3>
+        <h3 className="subtitle">Shipping: FREE </h3>
         {/* <h2 className="subtitle">Taxes: ${Number(total * .047).toFixed(2)} </h2> */}
         <h2>Total: ${Number(total).toFixed(2)} </h2>
         <button onClick={() => checkoutButton()} className="checkout-btn"><b>Go to Checkout</b></button>

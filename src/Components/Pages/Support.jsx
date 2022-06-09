@@ -3,10 +3,11 @@ import Footer from '../Footer'
 import NavBar from '../NavBar/NavBar'
 
 const Support = () => {
+
   return (
     <div>
         <NavBar />
-        Support
+        <h1>Support</h1>
         <Footer />
       </div>
         

@@ -1,12 +1,16 @@
-import React from 'react'
+import React, {useState} from 'react';
 import './Modal.css'
 
 function Modal({ data, openModal, setOpenModal, addToCart, setUpdate, update }) {
 
+  const [add, setAdd] = useState('hide')
+
   const addToCartHandler = () => {
     setUpdate(update + 1)
     addToCart(data.id)
+    setAdd('show')
   }
+
 
     return (
       <div className="modal-background">
@@ -48,8 +52,9 @@ function Modal({ data, openModal, setOpenModal, addToCart, setUpdate, update }) 
             >
               Cancel
             </button>
-            <button onClick={() => addToCartHandler()} >Add To Cart</button>
+            <button id="btn" onClick={() => addToCartHandler()} >Add to Cart</button>
           </div>
+          <p title="View in Cart" className={add}><a href="/cart">Item Added <i class="fa-solid fa-check"></i></a></p>
         </div>
         : null}
       </div>
