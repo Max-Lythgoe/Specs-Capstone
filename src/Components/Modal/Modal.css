@@ -85,7 +85,8 @@ a:link {
 
 .hide {
   color:white;
-  transform: scale(0)
+  transform: scale(0);
+  transition-duration: .3s;
 }
 
 #cancelBtn {

@@ -35,7 +35,7 @@ function ProductByCategory({update, setUpdate}) {
     return (
         <div>
             <Categories setCatname={setCatname} />
-            <h2>Products</h2>
+            <h2 >Products</h2>
             <hr className="line"></hr>
             <label className='sort'>Sort By:</label>
             <select className="selector" onChange={(event) => {setFilter(event.target.value)}} name="price-sort">

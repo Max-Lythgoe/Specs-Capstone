@@ -5,10 +5,12 @@ function Modal({ data, openModal, setOpenModal, addToCart, setUpdate, update }) 
 
   const [add, setAdd] = useState('hide')
 
+  //function that shows pop up when adding to cart, and adds item to cart
   const addToCartHandler = () => {
     setUpdate(update + 1)
     addToCart(data.id)
     setAdd('show')
+    setTimeout(() => {setAdd('hide')}, 5000)
   }
 
 

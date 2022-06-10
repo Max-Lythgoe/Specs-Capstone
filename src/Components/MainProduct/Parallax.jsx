@@ -22,6 +22,7 @@ const Parallax = () => {
 
         <img className='airpod-right' style={{transform: `translateY(${offsetY * 0.9}px)`}} src="https://cdn.shopify.com/s/files/1/1234/9356/products/image_8086ce1c-e7f3-4a02-a972-08d28595c226_500x500.png?v=1579848351" alt="right aripod"></img>
         <h2 className='maintext'>Airpod Pros</h2>
+        <h3 className='subtext'>Magic like you’ve never heard.</h3>
         <Link to="/categories/">
         <button className='buy-button'>Buy Now</button>
         </Link>
