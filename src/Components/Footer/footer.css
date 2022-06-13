@@ -69,6 +69,10 @@ a {
     color: white;
 }
 
+.small-logo {
+    width: 5em;
+}
+
 @media screen and (max-width: 960px) {
     .counter-icon {
         position: absolute;

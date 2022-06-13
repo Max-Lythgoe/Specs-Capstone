@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import Cart from '../Cart/Cart'
 import NavBar from '../NavBar/NavBar'
-import Footer from '../Footer'
+import Footer from '../Footer/Footer'
 
 const CartPage = () => {
     const [update, setUpdate] = useState(0)

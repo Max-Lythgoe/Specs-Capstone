@@ -2,6 +2,7 @@ import {useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './footer.css';
+import smallLogo from "./TS-Centered-Logo.png";
 
 const Footer = ({update}) => {
 
@@ -41,8 +42,9 @@ const Footer = ({update}) => {
           </div>
         </div>
         <hr></hr>
-        <p>Copyright ©2022 All Fake Rights Reserved by TechStack</p> <a href="/support">Learn More</a>
+        <p>Copyright ©2022 All Fake Rights Reserved by TechStack</p> 
       </div>
+      <img className="small-logo" src={smallLogo} alt="small TechStack Logo"></img>
       <Link to="/cart">
       <div>
       <h1 className="counter-icon">{data.length}</h1>
