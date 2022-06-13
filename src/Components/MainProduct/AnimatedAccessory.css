@@ -1,0 +1,24 @@
+.accessory-container {
+    background-color: black;
+}
+
+.main-gif {
+    width: 50%
+}
+
+.maintext2 {
+    color: white;
+    font-size: 7em;
+    z-index: 1000;
+    margin-top: 0em;
+}
+
+@media screen and (max-width: 1280px) {
+    .main-gif {
+        width: 100%
+    }
+
+    .maintext2 {
+        font-size: 4em;
+    }
+}

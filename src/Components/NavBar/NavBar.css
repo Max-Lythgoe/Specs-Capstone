@@ -19,6 +19,12 @@
 .logo-pic {
     width: 25rem;
     margin: 1rem;
+    transition: all 0.2s ease-out;
+}
+
+.logo-pic:hover {
+    transition: all 0.2s ease-out;
+    filter: drop-shadow(5px 10px 10px #222);
 }
 
 .nav-menu {
@@ -36,11 +42,10 @@
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
+    transition: all 0.2s ease-out;
 }
 
 .nav-links:hover {
-    /* background-color: #1fc0d2; */
-    /* border-radius: 4px; */
     transition: all 0.2s ease-out;
     filter: drop-shadow(5px 10px 10px #222);
 }

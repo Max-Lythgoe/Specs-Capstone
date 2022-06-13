@@ -15,7 +15,7 @@ app.get('/api/allProducts', async (req, res) => {
     let products = await sequelize.query(`
     SELECT * FROM products
     WHERE category = 'computers'
-    LIMIT 8 
+    LIMIT 10
     `)
     res.status(200).send(products[0])
 });

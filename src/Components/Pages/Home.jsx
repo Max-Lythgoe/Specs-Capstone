@@ -4,6 +4,7 @@ import MainProduct from '../MainProduct/MainProduct'
 import NavBar from '../NavBar/NavBar'
 import Footer from '../Footer'
 import Parallax from '../MainProduct/Parallax';
+import AnimatedAccessory from '../MainProduct/AnimatedAccessory';
 
 function Home({update, setUpdate}) {
   
@@ -13,6 +14,7 @@ function Home({update, setUpdate}) {
         <Parallax />
         <Products update={update} setUpdate={setUpdate}/>
         <MainProduct />
+        <AnimatedAccessory />
         <Footer update={update} />
       </div>
     );
