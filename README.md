@@ -1,3 +1,7 @@
+# Link to 3 Minute Video Demo
+
+https://www.youtube.com/watch?v=K_o8q-KdgIg
+
 # Startup Instructions
 
 First, run "npm i" to install needed dependencies.
