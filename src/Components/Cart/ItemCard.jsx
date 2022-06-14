@@ -1,6 +1,7 @@
 import React from 'react';
 import './ItemCard.css'
 
+//each individual item in cart
 const ItemCard = ({data, removeItem}) => {
 
   return (

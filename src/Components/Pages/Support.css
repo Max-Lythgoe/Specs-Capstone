@@ -1,3 +1,36 @@
-.fa-solid {
-    color: black;
+.main-container {
+    margin: 2em;
+}
+
+.list-items {
+    list-style-type: circle;
+    font-size: x-large;
+    padding: 1em;
+}
+
+.list-container {
+    text-align: left;
+    margin: 2em;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.git-link {
+    color: blue;
+}
+
+iframe {
+    max-width: 90%;
+}
+
+
+@media screen and (max-width: 960px) {
+iframe {
+    width: auto;
+    height: auto;
+}
+
+.list-container {
+    padding: 0
+}
 }

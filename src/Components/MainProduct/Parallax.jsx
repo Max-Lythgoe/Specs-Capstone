@@ -2,10 +2,12 @@ import { useEffect, useState } from 'react'
 import {Link} from 'react-router-dom';
 import './Parallax.css'
 
+//airpods parallax ad on homepage
 const Parallax = () => {
     const [offsetY, setOffsetY] = useState(0);
     const handleScroll = () => setOffsetY(window.pageYOffset)
 
+    //function for parallax scroll
     useEffect(() => {
         window.addEventListener('scroll', handleScroll); 
 

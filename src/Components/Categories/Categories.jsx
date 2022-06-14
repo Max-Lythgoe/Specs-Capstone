@@ -2,6 +2,7 @@ import React from 'react'
 import { CategoryItems } from './CategoryList'
 import './CategoryCard.css'
 
+//category buttons that allow you to change selected category
 function Categories({setCatname}) {
 
     return (

@@ -3,6 +3,7 @@ import axios from 'axios';
 import ProductCard from './ProductCard';
 import './Products.css'
 
+//featured products (computers) on homepage
 function Products({update, setUpdate}) {
     const [data, setData] = useState([]);
 

@@ -2,10 +2,12 @@ import {useState, useEffect} from "react";
 import {Link} from 'react-router-dom';
 import "./MainProduct.css";
 
+//iphone ad on homepage
 const MainProduct = () => {
   const [offsetY, setOffsetY] = useState(0);
   const handleScroll = () => setOffsetY(window.pageYOffset)
 
+  //function for parallax scroll
   useEffect(() => {
       window.addEventListener('scroll', handleScroll); 
 

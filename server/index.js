@@ -10,7 +10,9 @@ const stripe = require('stripe')(process.env.STRIPE_PRIVATE_KEY)
 app.use(express.json());
 app.use(cors());
 
-//Put endpoints here
+//Endpoints:
+
+//get 10 computers for home page
 app.get('/api/allProducts', async (req, res) => {
     let products = await sequelize.query(`
     SELECT * FROM products
@@ -20,7 +22,7 @@ app.get('/api/allProducts', async (req, res) => {
     res.status(200).send(products[0])
 });
 
-//category
+//select all from category
 app.get(`/api/categories/:catname`, async (req, res) => {
     const {catname} = req.params
     const products = await sequelize.query(`
@@ -30,6 +32,7 @@ app.get(`/api/categories/:catname`, async (req, res) => {
     res.status(200).send(products[0])
 })
 
+// get all items from cart
 app.get(`/api/userCart/:id`, async (req, res) => {
     const {id} = req.params
     const myCart = await sequelize.query(`
@@ -67,6 +70,7 @@ app.get(`/api/cartCount/:id`, async (req, res) => {
     res.status(200).send(cartCount[0])
 })
 
+// add item to cart
 app.post(`/api/addToCart`, async (req, res) => {
     const {userID, productID} = req.body
     await sequelize.query(`
@@ -79,6 +83,7 @@ app.post(`/api/addToCart`, async (req, res) => {
     res.status(200).send("Item added to cart")
 })
 
+// remove item from cart
 app.delete(`/api/userCart/:id`, async (req, res) => {
     const {id} = req.params
     await sequelize.query(`

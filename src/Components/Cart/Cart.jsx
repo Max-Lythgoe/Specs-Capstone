@@ -10,6 +10,7 @@ const Cart = ({update, setUpdate}) => {
 
     let currentUser = 1
 
+    //get everything from cart
     const getData = () => {
         axios.get(`http://localhost:4000/api/userCart/${currentUser}`)
         .then((res) => {
@@ -17,6 +18,7 @@ const Cart = ({update, setUpdate}) => {
         })
     }
 
+    //remove from cart
     const removeItem = (id) => {
         axios.delete(`http://localhost:4000/api/userCart/${id}`)
         .then((res) => {
@@ -25,6 +27,7 @@ const Cart = ({update, setUpdate}) => {
         })
     }
 
+    //get cart total price
     const totalCart = () => {
         axios.get(`http://localhost:4000/api/cartTotal/${currentUser}`)
         .then((res) => {
@@ -32,6 +35,7 @@ const Cart = ({update, setUpdate}) => {
         })
     }
 
+    //stripe checkout
     const checkoutButton = () => {
         console.log(data)
         fetch('/create-checkout-session', {
@@ -52,6 +56,7 @@ const Cart = ({update, setUpdate}) => {
             console.error(e.error)
         })
  }
+ 
     useEffect(() => {
         getData()
         totalCart()

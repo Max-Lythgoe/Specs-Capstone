@@ -2,9 +2,10 @@ import { useState} from 'react';
 import Modal from '../Modal/Modal';
 import './productCard.css';
 
+//individual product cards, when clicked it opens modal view
 function ProductCard({data, addToCart, setUpdate, update}) {
     const [openModal, setOpenModal] = useState(false);
-    // console.log(setUpdate)
+    
     return (
         <div>
         <div className='product-card' onClick={() => {setOpenModal(true)}}>

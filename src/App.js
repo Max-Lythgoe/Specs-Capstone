@@ -7,8 +7,9 @@ import CategoriesPage from './Components/Pages/Categories';
 import Support from './Components/Pages/Support';
 
 function App() {
+  //update and setUpdate are updating state for the cart counter to update
   const [update, setUpdate] = useState(0)
-  console.log(update)
+  
   return (
     <div className="App">
       <Routes>

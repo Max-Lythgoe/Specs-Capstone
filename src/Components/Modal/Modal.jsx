@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './Modal.css'
 
+//modal view when clicking on any product card
 function Modal({ data, openModal, setOpenModal, addToCart, setUpdate, update }) {
 
   const [add, setAdd] = useState('hide')

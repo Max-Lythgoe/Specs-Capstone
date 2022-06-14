@@ -7,6 +7,7 @@ import logoPic from "./techstacklogo.png";
 class NavBar extends Component {
   state = { clicked: false };
 
+  //function for changing icon for hamburger menu
   handleClick = () => {
     this.setState({ clicked: !this.state.clicked });
   };

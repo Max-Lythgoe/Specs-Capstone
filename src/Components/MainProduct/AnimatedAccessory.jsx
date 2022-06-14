@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './AnimatedAccessory.css';
 
+//accessory ad on homepage
 const AnimatedAccessory = () => {
   return (
         <div className='accessory-container'>

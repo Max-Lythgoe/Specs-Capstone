@@ -45,6 +45,7 @@ const Footer = ({update}) => {
         <p>Copyright ©2022 All Fake Rights Reserved by TechStack</p> 
       </div>
       <img className="small-logo" src={smallLogo} alt="small TechStack Logo"></img>
+      {/* Cart counter icon at top of screen, links to cart */}
       <Link to="/cart">
       <div>
       <h1 className="counter-icon">{data.length}</h1>
